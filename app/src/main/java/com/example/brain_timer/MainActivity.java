@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
 
         startButton.setVisibility(View.INVISIBLE);
         gameRelativeLayout.setVisibility(View.VISIBLE);
-
         playAgain(findViewById(R.id.playAgainButton));
 
     }
