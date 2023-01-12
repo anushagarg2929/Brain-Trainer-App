@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     TextView timertextView;
     Button playAgainButton;
     RelativeLayout gameRelativeLayout;
+    RelativeLayout relativeLayout;
 
     int locationCorrectAnswer;
     int score = 0;
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
     public void start(View view){
 
         startButton.setVisibility(View.INVISIBLE);
-        gameRelativeLayout.setVisibility(View.VISIBLE);
+        relativeLayout.setVisibility(View.VISIBLE);
         playAgain(findViewById(R.id.playAgainButton));
 
     }
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         timertextView = (TextView) findViewById(R.id.timertextView);
         playAgainButton = (Button) findViewById(R.id.playAgainButton);
         gameRelativeLayout = (RelativeLayout) findViewById(R.id.gameRealtiveLayout);
+        relativeLayout = (RelativeLayout) findViewById(R.id.relativeLayout);
 
         playAgain(findViewById(R.id.playAgainButton));
 
